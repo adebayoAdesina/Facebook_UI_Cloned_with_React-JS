@@ -1,0 +1,10 @@
+.posts {
+    width: 50%;
+    padding: 0 30px;
+    position: relative;
+}
+
+.posts .stories {
+    position: relative;
+}
+

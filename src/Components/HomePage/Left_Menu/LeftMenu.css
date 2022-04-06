@@ -1,3 +1,4 @@
+
 .wrapper .shortcuts .first-col .menu-item:last-of-type .item-row .icon {
     background-color: var(--lighter);
     border-radius: 50%;
@@ -7,10 +8,12 @@
 }
 
 .wrapper .shortcuts .first-col .menu-item:last-of-type .item-row {
-    border-bottom: 1px solid var(--border-bottom);
     padding-bottom: 20px;
     margin-bottom: 20px;
     width: 250px
+}
+.wrapper .shortcuts .first-col .menu-item:last-of-type .borders {
+    border-bottom: 1px solid var(--border-bottom);
 }
 
 .wrapper .shortcuts .first-col .menu-item:last-of-type .item-row .icon img {

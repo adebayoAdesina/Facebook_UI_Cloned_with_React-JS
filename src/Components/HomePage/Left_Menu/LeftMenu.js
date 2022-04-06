@@ -6,6 +6,12 @@ import ColoredPeopleIcon from '../../Assets/Icons/colored-people.svg'
 import ColoredMessengerIcon from '../../Assets/Icons/colored-messenger.svg'
 import ColoredFlagIcon from '../../Assets/Icons/colored-flag.svg'
 import ArrowDownIcon from '../../Assets/Icons/arrow-down.svg'
+import StoriesPicOne from '../../Assets/Stories/st-1.jpeg'
+import StoriesPicTwo from '../../Assets/Stories/st-2.jpeg'
+import StoriesPicThree from '../../Assets/Stories/st-3.jpeg'
+import StoriesPageOne from '../../Assets/Stories/page-1.jpg'
+import StoriesPageTwo from '../../Assets/Stories/page-2.jpg'
+import StoriesPageThree from '../../Assets/Stories/page-3.jpeg'
 
 const LeftMenu = () => {
     return (
@@ -58,7 +64,7 @@ const LeftMenu = () => {
                 </div>
 
                 <div class="menu-item">
-                    <div class="item-row  border">
+                    <div class="item-row  borders">
                         <div class="icon more">
                             <img src={ArrowDownIcon} alt=""/>
                         </div>
@@ -75,7 +81,7 @@ const LeftMenu = () => {
                 <div class="menu-item">
                     <div class="item-row">
                         <div class="icon">
-                            <img src="img/stories/st-1.jpeg" alt=""/>
+                            <img src={StoriesPicOne} alt=""/>
                         </div>
                         <h4>Designers house </h4>
                     </div>
@@ -84,14 +90,14 @@ const LeftMenu = () => {
                 <div class="menu-item">
                     <div class="item-row">
                         <div class="icon">
-                            <img src="img/stories/st-2.jpeg" alt=""/>
+                            <img src={StoriesPicTwo} alt=""/>
                         </div>
                         <h4>Script house </h4>
                     </div>
                     <div class="menu-item">
                         <div class="item-row">
                             <div class="icon">
-                                <img src="img/stories/page-1.jpg" alt=""/>
+                                <img src={StoriesPageOne} alt=""/>
                             </div>
                             <h4>ui ux Designers workshop </h4>
                         </div>
@@ -100,7 +106,7 @@ const LeftMenu = () => {
                     <div class="menu-item">
                         <div class="item-row">
                             <div class="icon">
-                                <img src="img/stories/st-3.jpeg" alt=""/>
+                                <img src={StoriesPicThree} alt=""/>
                             </div>
                             <h4>netflix movies recommends </h4>
                         </div>
@@ -109,7 +115,7 @@ const LeftMenu = () => {
                     <div class="menu-item">
                         <div class="item-row">
                             <div class="icon">
-                                <img src="img/stories/page-2.jpg" alt=""/>
+                                <img src={StoriesPageTwo} alt=""/>
                             </div>
                             <h4>the futur </h4>
                         </div>
@@ -119,7 +125,7 @@ const LeftMenu = () => {
                     <div class="menu-item">
                         <div class="item-row">
                             <div class="icon">
-                                <img src="img/stories/page-3.jpeg" alt=""/>
+                                <img src={StoriesPageThree} alt=""/>
                             </div>
                             <h4>aj smart </h4>
                         </div>
