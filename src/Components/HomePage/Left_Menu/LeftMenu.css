@@ -1,0 +1,23 @@
+.wrapper .shortcuts .first-col .menu-item:last-of-type .item-row .icon {
+    background-color: var(--lighter);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.wrapper .shortcuts .first-col .menu-item:last-of-type .item-row {
+    border-bottom: 1px solid var(--border-bottom);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 250px
+}
+
+.wrapper .shortcuts .first-col .menu-item:last-of-type .item-row .icon img {
+    height: 40%;
+    width: 40%;
+}
+
+.wrapper .shortcuts .first-col .menu-item:last-of-type .item-row h4 {
+    margin-top: 8px;
+}

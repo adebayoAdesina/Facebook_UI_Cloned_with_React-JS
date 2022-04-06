@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+/*  variables and defaul css */
+:root {
+  --primary: rgb(3, 29, 46);
+  --accent: rgb(7, 42, 65);
+  --lighter: rgb(26, 68, 100);
+  --blue: rgb(29, 63, 214);
+  --font: rgb(206, 206, 206);
+  --placeholder: rgb(219, 219, 219);
+  --notification: #ff4d4d;
+  --green: rgb(19, 209, 19);
+  --border: #5AA1FF;
+  --border-bottom: #043474;
+  --white: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+    font-family: "Poppins";
+    overflow-x: hidden;
+    background-color: var(--primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button,
+input {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: var(--placeholder);
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: var(--placeholder);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: var(--placeholder);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--placeholder);
+
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--placeholder);
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: var(--placeholder);
+}
+
+
+/* commonly used widgets */
+
+.user,
+.item-row {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 6px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.item-row {
+    margin-top: 15px;
+}
+
+.user .profile,
+.item-row .icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item-row .icon {
+    border-radius: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.user .profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-row .icon img {
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+}
+
+.user h4,
+.item-row h4 {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 0.88rem;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+h6.title {
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--font);
+    text-transform: capitalize;
+}
+
+
+.wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  padding: 20px 25px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.wrapper .shortcuts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.wrapper .shortcuts .menu-item {
+  width: 100%;
+  margin-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper .shortcuts .menu-item .user .profile {
+  height: 35px;
+  width: 35px;
+}
+
+.wrapper .shortcuts .menu-item .item-row h4 {
+  margin: 5px;
 }
