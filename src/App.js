@@ -13,6 +13,7 @@ function App() {
         <CenterMenu/>
         <RightMenu/>
     </div>
+    
    </>
   );
 }

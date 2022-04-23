@@ -3,6 +3,7 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    margin: 5px;
 }
 
  .item .story-image {

@@ -36,3 +36,363 @@
     height: 30%;
     width: 30%;
 }
+
+
+.controllers {
+    margin-top: 15%;
+}
+
+.posts .create-post,
+.posts .view {
+    margin-top: 50px;
+    background-color: var(--accent);
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+}
+
+.posts .create-post.smaller-margin,
+.posts .view.smaller-margin {
+    margin-top: 15px;
+}
+
+.posts .create-post .input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.posts .create-post .input input {
+    background-color: var(--lighter);
+    border: none;
+    border-radius: 100px;
+    padding: 12px;
+    width: 100%;
+    margin-left: 10px;
+    color: var(--placeholder);
+    font-size: 0.88rem;
+}
+
+.posts .create-post .media {
+    border-top: 2px solid var(--border-bottom);
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.posts .create-post .media .category,
+.posts .create-post .upper .title,
+.posts .create-post .media .category .option {
+    display: flex;
+    align-items: center;
+}
+
+.posts .create-post .media .category {
+    justify-content: space-between;
+}
+
+.posts .create-post .media .category .option .icon,
+.posts .create-post .upper .title .icon {
+    height: 25px;
+    width: 25px;
+}
+
+.posts .create-post .media .category .option:nth-child(2) .icon {
+    height: 20px;
+    width: 20px;
+}
+
+.posts .create-post .media .category .option .icon img,
+.posts .create-post .upper .title .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.posts .create-post .media .category .option span,
+.posts .create-post .upper span {
+    color: var(--font);
+    margin-left: 8px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.posts .view .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts .view .upper .title {
+    display: flex;
+    align-items: center;
+}
+
+.posts .view .upper span {
+    color: var(--white);
+}
+
+.posts .view .upper a {
+    color: var(--border);
+    text-decoration: none;
+    font-size: 0.88rem;
+    text-transform: capitalize;
+}
+
+.posts .view .rooms .user .profile {
+    position: relative;
+    overflow: visible;
+}
+
+.posts .view .rooms .user .profile img {
+    border-radius: 50%;
+}
+
+.posts .view .rooms {
+    padding: 20px 0;
+}
+
+.items {
+    margin: 5px;
+}
+.posts .view.view-post-container {
+    padding-bottom: 20px;
+}
+
+.posts .view .profile::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--green);
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    border: 3px solid var(--accent);
+}
+
+.posts .view .view-post .upper .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.posts .view .view-post .upper .d-flex .info {
+    margin-left: 10px;
+}
+
+.posts .view .view-post .upper .d-flex .info h6 {
+    color: var(--white);
+    font-size: 0.99rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.posts .view .view-post .upper .d-flex .user {
+    margin-top: -10px;
+}
+
+.posts .view .view-post .upper .info span {
+    color: var(--font);
+    font-size: 0.77rem;
+}
+
+.posts .view .upper h6,
+.shortcuts .upper h6 {
+    color: var(--font);
+    font-size: 0.99rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.posts .view .upper .dots,
+.shortcuts .upper .dots {
+    position: relative;
+}
+
+.posts .view .upper .dots .dot,
+.shortcuts .upper .dots dot {
+    height: 5px;
+    width: 5px;
+    background-color: var(--font);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.posts .view .upper .dots .dot::before,
+.shortcuts .upper .dots dot::before,
+.posts .view .upper .dots .dot::after,
+.shortcuts .upper .dots dot::after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-color: var(--font);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.posts .view .upper .dots .dot::before {
+    left: 8px;
+}
+
+.posts .view .upper .dots .dot::after {
+    right: 8px;
+}
+
+.posts .view .view-post .desc p {
+    color: var(--white);
+    margin: 20px 0 10px 0;
+    font-size: 00.88rem;
+}
+
+.posts .view .view-post .post-img {
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.posts .view .view-post .post-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.posts .view .view-post .actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts .view .view-post .actions-container .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.posts .view .view-post .actions-container .action .icon {
+    height: 20px;
+    width: 20px;
+}
+
+.posts .view .view-post .actions-container .action .icon img,
+.posts .view .view-post .write-comment .input .media .icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.posts .view .view-post .actions-container .action span {
+    color: var(--font);
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 0.88rem;
+}
+
+.posts .view .view-post .write-comment,
+.posts .view .view-post .write-comment .input,
+.posts .view .view-post .write-comment .input .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts .view .view-post .write-comment {
+    padding: 10px 0 0 0;
+    border-top: 2px solid var(--border-bottom);
+    margin: 10px 0 0 0;
+}
+
+.posts .view .view-post .write-comment .input {
+    width: 100%;
+    background-color: var(--lighter);
+    border-radius: 100px;
+    padding: 12px;
+    margin: 10px 0 0 10px
+}
+
+.posts .view .view-post .write-comment .input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.posts .view .view-post .write-comment .input .media .icon {
+    height: 18px;
+    width: 18px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+/* people you may know */
+.posts .view.friends {
+    padding-bottom: 10px;
+}
+
+.posts .view .people .item {
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 2px solid var(--border-bottom);
+}
+
+.posts .view .people .item .person-img {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+}
+
+.posts .view .people .item .person-img .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--lighter);
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.posts .view .people .item .person-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.posts .view .people .item .info {
+    text-align: center;
+    padding: 12px 10px 10px 10px;
+}
+
+.posts .view .people .item .info h4 {
+    font-size: 0.99rem;
+    color: var(--font);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.posts .view .people .item .info span {
+    font-weight: 400;
+    font-size: 0.77rem;
+    color: var(--font);
+}
+
+.posts .view .people .item .info button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--lighter);
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+

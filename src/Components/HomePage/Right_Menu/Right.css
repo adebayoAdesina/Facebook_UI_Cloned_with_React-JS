@@ -1,0 +1,43 @@
+ .shortcuts-2 .first-col .menu-item:last-of-type .item-row .icon,
+ .shortcuts-2 .first-col .menu-item:last-of-type .item-row h4 {
+    display: none;
+}
+
+ .shortcuts-2 .menu-item .item-row .icon.not-rounded {
+    border-radius: 0;
+}
+
+ .shortcuts-2 .online {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-bottom);
+}
+
+ .shortcuts-2 .online h6 {
+    margin-bottom: 20px;
+}
+
+ .shortcuts-2 .online .user {
+    margin-bottom: 15px;
+}
+
+ .shortcuts-2 .profile {
+    position: relative;
+    overflow: visible;
+}
+
+ .shortcuts-2 .profile img {
+    border-radius: 50%;
+}
+
+ .shortcuts-2 .profile::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--green);
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    border: 3px solid var(--accent);
+}
