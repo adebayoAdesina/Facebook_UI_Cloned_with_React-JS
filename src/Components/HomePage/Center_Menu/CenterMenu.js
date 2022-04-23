@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './CenterMenu.css';
 import './owl.carousel.min.css';
 import './owl.theme.default.css';
@@ -28,7 +28,7 @@ import avatarFive from '../../Assets/Images/5.jpg'
 
 function CenterMenu() {
 
-    const [storiesDetail, setStoriesDetail] = useState([
+    const storiesDetail = [
         {
             name : 'John',
             profilePic : PhotoOne,
@@ -44,7 +44,7 @@ function CenterMenu() {
             profilePic : PhotoOne,
             'Stories' : StoriesOne,
         }
-    ])
+    ]
 
     return (
         <div class="posts">
@@ -74,7 +74,7 @@ function CenterMenu() {
                 </div>
                 
                 {
-                storiesDetail.length != 0 ? storiesDetail.map((stories, i)=> (<Stories stories={stories}/>)) : <div></div>
+                    storiesDetail.length !== 0 ? storiesDetail.map((stories, i)=> (<Stories stories={stories}/>)) : <div></div>
                 }
             </div>
             
@@ -122,9 +122,10 @@ function CenterMenu() {
                             </div>
                             <span>Rooms</span>
                         </div>
-                        <a href="">
+                        <a href='/'>
                             create
                         </a>
+                        
                     </div>
 
                     <div class="owl-carousel owl-theme rooms">
